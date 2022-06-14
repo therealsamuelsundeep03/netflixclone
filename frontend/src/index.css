@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background : #111;
+  height: 100vh;
+}
+
+/* navbar styling */
+.nav{
+  position:fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.navBlack{
+  background-color: #111;
+}
+.navContents{
+  display: flex;
+  justify-content: space-between;
+}
+.netflixLogo{
+  position: fixed;
+  width: 80px;
+  padding-left:10px;
+  top:30px;
+  object-fit: contain;
+}
+.avatar{
+  position: fixed;
+  width: 40px;
+  height: 30px;
+  right: 20px;
+  object-fit: contain;
+}
+
+/* banner styling */
+.banner{
+  position: relative;
+  height: 448px;
+  color:#fff;
+  object-fit: contain;
+}
+.bannerContents{
+  margin-left: 30px;
+  padding-top: 140px;
+}
+.bannerdDesc{
+  width: 45rem;
+  line-height: 1.3rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  height: 80px;
+  max-width: 360px;
+}
+.bannerFade{
+  height: 8.8rem;
+  background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+}
+.bannerButton{
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(51,51,51,0.5);
+}
+.bannerButton:hover{
+  color: #111;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+/* row styling */
+.row > h2{
+  color : #fff;
+  margin:20px 20px;
+  font-size: 1.2rem;
+}
+.posters{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.posters::-webkit-scrollbar{
+  display: none;
+}
+.posterimage{
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+  width: 100%;
+  transition: transform 450px;
+}
+.posterimage:hover{
+  transform: scale(1.08);
+  opacity: 1;
+  margin-bottom: 10px
+}
+.posterimageLarge{
+    max-height: 250px;
+    width: 100%;
+}
+.posterimageLarge:hover{
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+
